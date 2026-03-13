@@ -34,36 +34,42 @@ int porte = int.Parse(Console.ReadLine());
 
 
 double valor;
+string porteTamanho;
 switch (porte)
 {
         case 1:
-        porte = 1;
+      
         Console.WriteLine("25,00 R$");
+        porteTamanho = "Pequeno";
         valor = 25.00;
+       
         break;
 
         case 2:
-        porte = 2;
+      
         Console.WriteLine("35,00 R$");
         valor = 35.00;
+        porteTamanho = "Médio";
         break;
 
         case 3: 
-        porte = 3;
+      
         Console.WriteLine("45,00 R$");
         valor = 45.00;
+        porteTamanho = "Grande";
         break;
 
         default: 
         Console.WriteLine("Digitou errou fi de rapariga, tenta denovo");
         valor = 00.00; //se nao atribuir o valor para o default ele da erro, pq var n pode estar vazia e pa
+        porteTamanho = "";
         break;
 }
 
 Console.WriteLine("===============================================");
 Console.WriteLine("Nome do Pet :" + Nome);
 Console.WriteLine("Idade do Pet: "+ idade);
-Console.WriteLine($"Porte do Pet e Classe: {porte} anos, ele é {classe} ");
+Console.WriteLine($"Porte do Pet e Classe: {porteTamanho}, ele é {classe} ");
 Console.WriteLine($"Valor do banhoo: {valor}");
 Console.WriteLine("===============================================");
 
