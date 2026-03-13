@@ -69,6 +69,7 @@ switch (porte)
 Console.WriteLine("===============================================");
 Console.WriteLine("Nome do Pet :" + Nome);
 Console.WriteLine("Idade do Pet: "+ idade);
+Console.WriteLine("Raça: " + Raca);
 Console.WriteLine($"Porte do Pet e Classe: {porteTamanho}, ele é {classe} ");
 Console.WriteLine($"Valor do banhoo: {valor}");
 Console.WriteLine("===============================================");
